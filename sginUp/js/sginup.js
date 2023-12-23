@@ -1,3 +1,5 @@
+
+"use strict";
 let userName = document.querySelector("#userName");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
