@@ -1,3 +1,4 @@
+"use strict";
 let ele = document.querySelector("#display")
 let btn = document.querySelector("#btn")
 
