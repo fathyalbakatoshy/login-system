@@ -1,3 +1,4 @@
+"use strict";
 let mailLogIn = document.querySelector("#mailLogIn");
 let passLogIn = document.querySelector("#passLogIn");
 let btn = document.querySelector("#btn");
