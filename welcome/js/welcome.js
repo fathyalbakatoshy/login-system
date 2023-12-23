@@ -11,5 +11,5 @@ ele.innerHTML = `<h2 class="text-white">${userName}</h2>`
 
 
 btn.addEventListener("click" ,function () {
-  window.open("/index.html", "_parent");
+  location.href = '/index.html'
 })

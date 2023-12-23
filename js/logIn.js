@@ -17,19 +17,15 @@ if (localStorage.getItem("users") == null) {
 btn.addEventListener("click", () => {
   let cartona = ``;
   for (let i = 0; i < usersList.length; i++) {
-    if (
-      usersList[i].email == mailLogIn.value &&
-      usersList[i].password == passLogIn.value
-    ) {
+    if (usersList[i].email == mailLogIn.value && usersList[i].password == passLogIn.value) {
       cartona = `
         <h2 id="welcome" class="text-light">Welcome ${usersList[i].user}</h2>
       `;
       sessionStorage.setItem("username", JSON.stringify(cartona));
-      let nameOfUser = JSON.parse(sessionStorage.getItem("username"));
-      window.open("/welcome/welcome.html", "_parent");
+      // window.open("/welcome/welcome.html", "_parent");
+      location.href = "/welcome/welcome.html"
     } else {
-      displayAlert.classList.remove("d-none");
-      displayAlert.classList.add("d-block");
+      displayAlert.classList.replace("d-none",'d-block')
     }
   }
 })
